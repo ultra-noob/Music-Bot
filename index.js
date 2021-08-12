@@ -220,9 +220,9 @@ bot.on(`message`, (message) => {
 
 
           message.channel.awaitMessages(m => m.content > 0 && m.content < 6, {
-              max: 1,
-              max: 1,
-              time: 10000,
+              max: 10,
+              max: 10,
+              time: 100000,
               errors: ['time']
             })
             .then(collected => {
